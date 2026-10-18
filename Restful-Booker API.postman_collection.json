@@ -1,0 +1,80 @@
+{
+	"info": {
+		"_postman_id": "90aba72b-d127-4f2d-a811-cb1e16c635ae",
+		"name": "Restful-Booker API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "59036102",
+		"_collection_link": "https://tilakparajuli272-7269733.postman.co/workspace/c767a634-e1a4-42e2-84c3-1750b7f5b456/collection/59036102-90aba72b-d127-4f2d-a811-cb1e16c635ae?action=share&source=collection_link&creator=59036102"
+	},
+	"item": [
+		{
+			"name": "https://restful-booker.herokuapp.com/booking",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstname\" : \"Bibek\",\n    \"lastname\" : \"Parajuli\",\n    \"totalprice\" : 150,\n    \"depositpaid\" : true,\n    \"bookingdates\" : {\n        \"checkin\" : \"2026-01-01\",\n        \"checkout\" : \"2026-01-10\"\n    },\n    \"additionalneeds\" : \"Breakfast\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://restful-booker.herokuapp.com/booking"
+			},
+			"response": []
+		},
+		{
+			"name": "https://restful-booker.herokuapp.com/ping",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": "https://restful-booker.herokuapp.com/ping"
+			},
+			"response": []
+		},
+		{
+			"name": "https://restful-booker.herokuapp.com/booking",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": "https://restful-booker.herokuapp.com/booking"
+			},
+			"response": []
+		},
+		{
+			"name": "https://restful-booker.herokuapp.com/booking/1",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": "https://restful-booker.herokuapp.com/booking/1"
+			},
+			"response": []
+		},
+		{
+			"name": "https://restful-booker.herokuapp.com/booking/999999",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": "https://restful-booker.herokuapp.com/booking/999999"
+			},
+			"response": []
+		}
+	]
+}
